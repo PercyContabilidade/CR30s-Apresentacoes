@@ -234,36 +234,37 @@
 
             <div class="reveal-item connector-aula2" data-step="15"></div>
 
-            <!-- FECHAMENTO DE OURO: OS 5 DEDOS -->
+            <!-- FECHAMENTO DE OURO: O PODER DO PROTOCOLO (CORRIGIDO) -->
             <div class="reveal-item bg-gradient-to-r from-red-600 to-red-800 text-white p-8 rounded-2xl shadow-2xl text-center card-hover mt-4" data-step="15">
-                <h3 class="font-black text-3xl mb-4"><i class="fa-solid fa-hand"></i> Os 5 Dedos da Transformação</h3>
-                <p class="text-red-100 font-medium mb-6">A sabedoria de Pablo Marçal aplicada ao nosso Protocolo Diário ("Sou filho amado" e "Estou me recuperando").</p>
+                <h3 class="font-black text-3xl mb-4"><i class="fa-solid fa-hand"></i> O Poder do Nosso Protocolo Diário</h3>
+                <p class="text-red-100 font-medium mb-2 text-lg">A sabedoria transformadora do Celebrando a Recuperação ("Sou filho amado" e "Estou me recuperando").</p>
+                <p class="text-red-200 text-sm mb-6 italic opacity-90">Para fins didáticos, um paralelo com a ilustração dos "5 Dedos" de Pablo Marçal:</p>
                 
                 <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
                     <div class="bg-black/20 p-4 rounded-lg backdrop-blur-sm">
                         <div class="text-3xl mb-2">📍</div>
-                        <div class="font-bold text-sm">Novos Lugares</div>
-                        <div class="text-xs text-red-200 mt-1">A Roda de Partilha</div>
+                        <div class="font-bold text-base leading-tight">A Roda de Partilha</div>
+                        <div class="text-xs text-red-300 mt-2 font-light">Novos Lugares</div>
                     </div>
                     <div class="bg-black/20 p-4 rounded-lg backdrop-blur-sm">
                         <div class="text-3xl mb-2">👥</div>
-                        <div class="font-bold text-sm">Novas Pessoas</div>
-                        <div class="text-xs text-red-200 mt-1">O Grupo e Padrinhos</div>
+                        <div class="font-bold text-base leading-tight">Grupo & Padrinhos</div>
+                        <div class="text-xs text-red-300 mt-2 font-light">Novas Pessoas</div>
                     </div>
                     <div class="bg-black/20 p-4 rounded-lg backdrop-blur-sm">
                         <div class="text-3xl mb-2">🧠</div>
-                        <div class="font-bold text-sm">Novos Pensamentos</div>
-                        <div class="text-xs text-red-200 mt-1">Identidade em Cristo</div>
+                        <div class="font-bold text-base leading-tight">Identidade em Cristo</div>
+                        <div class="text-xs text-red-300 mt-2 font-light">Novos Pensamentos</div>
                     </div>
                     <div class="bg-black/20 p-4 rounded-lg backdrop-blur-sm">
                         <div class="text-3xl mb-2">⚡</div>
-                        <div class="font-bold text-sm">Novas Ações</div>
-                        <div class="text-xs text-red-200 mt-1">As 8 Decisões</div>
+                        <div class="font-bold text-base leading-tight">As 8 Decisões</div>
+                        <div class="text-xs text-red-300 mt-2 font-light">Novas Ações</div>
                     </div>
                     <div class="bg-black/20 p-4 rounded-lg backdrop-blur-sm col-span-2 md:col-span-1">
                         <div class="text-3xl mb-2">🏆</div>
-                        <div class="font-bold text-sm">Novos Resultados</div>
-                        <div class="text-xs text-red-200 mt-1">Destino Seguro</div>
+                        <div class="font-bold text-base leading-tight">Destino Seguro</div>
+                        <div class="text-xs text-red-300 mt-2 font-light">Novos Resultados</div>
                     </div>
                 </div>
             </div>
@@ -289,14 +290,13 @@
     <!-- Lógica JavaScript -->
     <script>
         let currentStep = 0;
-        const maxSteps = 15; // Atualizado para 15 passos
+        const maxSteps = 15;
 
         function updateCounter() {
             document.getElementById('step-counter').innerText = currentStep;
         }
 
         function scrollToElement(element) {
-            // Rola a tela para garantir que o novo elemento apareça centralizado
             setTimeout(() => {
                 element.scrollIntoView({ behavior: 'smooth', block: 'center' });
             }, 100);
@@ -309,7 +309,6 @@
                 elements.forEach(el => el.classList.add('revealed'));
                 updateCounter();
                 
-                // Se o passo tiver conteúdo que precise de scroll, leva a tela até ele
                 if(elements.length > 0 && currentStep > 7) {
                     scrollToElement(elements[0]);
                 }
@@ -323,7 +322,6 @@
                 currentStep--;
                 updateCounter();
                 
-                // Volta o scroll se estivermos subindo
                 if(currentStep >= 1) {
                     const prevElements = document.querySelectorAll(`[data-step="${currentStep}"]`);
                     if(prevElements.length > 0) {
@@ -335,10 +333,9 @@
             }
         }
 
-        // Controle por Teclado
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Enter' || e.key === 'ArrowRight' || e.key === ' ') {
-                e.preventDefault(); // Evita que o espaço role a tela bruscamente
+                e.preventDefault(); 
                 nextStep();
             } else if (e.key === 'ArrowLeft' || e.key === 'Backspace') {
                 e.preventDefault();
