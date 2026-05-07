@@ -4,374 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apresentação: Mapa Mental CR30s</title>
-    <!-- Tailwind CSS para estilização -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
         body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
-        
-        /* Conectores */
-        .connector-vertical {
-            width: 4px;
-            height: 40px;
-            background-color: #cbd5e1; 
-            margin: 0 auto;
-        }
-        .connector-long {
-            width: 4px;
-            height: 80px;
-            background: linear-gradient(to bottom, #cbd5e1, #ef4444);
-            margin: 0 auto;
-        }
-        .connector-aula2 {
-            width: 4px;
-            height: 40px;
-            background-color: #fca5a5;
-            margin: 0 auto;
-        }
-        
-        .card-hover:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-        }
-        
-        /* Animação Progressiva */
-        .reveal-item {
-            opacity: 0;
-            transform: translateY(30px) scale(0.95);
-            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-            visibility: hidden;
-            position: relative;
-        }
-        .reveal-item.revealed {
-            opacity: 1;
-            transform: translateY(0) scale(1);
-            visibility: visible;
-        }
+        .connector-vertical { width: 4px; height: 40px; background-color: #cbd5e1; margin: 0 auto; }
+        .connector-long { width: 4px; height: 80px; background: linear-gradient(to bottom, #cbd5e1, #10b981); margin: 0 auto; }
+        .reveal-item { opacity: 0; transform: translateY(30px) scale(0.95); transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1); visibility: hidden; position: relative; }
+        .reveal-item.revealed { opacity: 1; transform: translateY(0) scale(1); visibility: visible; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; }
     </style>
 </head>
-<body class="bg-slate-50 min-h-screen p-4 md:p-8 text-slate-800 pb-72">
+<body class="bg-slate-50 min-h-screen p-4 md:p-8 text-slate-800 pb-96">
 
     <div class="max-w-6xl mx-auto">
         <!-- TÍTULO -->
         <div class="text-center mb-10">
-            <h1 class="text-3xl md:text-5xl font-extrabold text-red-600 mb-3 drop-shadow-sm"><i class="fa-solid fa-brain"></i> Mapa Mental: CR30s</h1>
-            <p class="text-slate-600 font-medium text-lg uppercase tracking-widest">Grandes Decisões, Destinos Seguros</p>
+            <h1 class="text-3xl md:text-5xl font-extrabold text-red-600 mb-3 drop-shadow-sm"><i class="fa-solid fa-house-medical"></i> Mapa Mental: CR30s</h1>
+            <p class="text-slate-600 font-medium text-lg uppercase tracking-widest text-center">Conclusão: A Cura das Feridas</p>
         </div>
 
-        <!-- ==========================================
-             SEMANA 1 (AULA 01)
-             ========================================== -->
-        <div class="reveal-item bg-red-600 text-white p-4 rounded-xl shadow-lg text-center font-bold text-2xl mb-2 card-hover w-64 mx-auto z-10" data-step="1">
-            AULA 01
-        </div>
-        <div class="reveal-item connector-vertical" data-step="2"></div>
+        <!-- Conteúdo anterior simplificado (Semanas 01 e 02) -->
+        <div class="reveal-item connector-long mt-8" data-step="1"></div>
 
-        <!-- Ramificações Aula 01 -->
-        <div class="flex flex-col md:flex-row justify-center items-start gap-6 relative">
-            <div class="reveal-item hidden md:block absolute top-0 left-1/4 right-1/4 h-1 bg-slate-300 -z-10 mt-[-2px]" data-step="2"></div>
-            
-            <!-- RAMO 1: INTRODUÇÃO -->
-            <div class="w-full md:w-1/3 flex flex-col items-center">
-                <div class="reveal-item hidden md:block w-1 h-6 bg-slate-300 -mt-6 mb-0" data-step="2"></div>
-                <div class="reveal-item bg-blue-600 text-white p-4 rounded-lg shadow-md w-full text-center font-bold mb-4 text-lg" data-step="2">1. INTRODUÇÃO</div>
-                <div class="space-y-3 w-full">
-                    <div class="reveal-item bg-white p-4 rounded border-l-4 border-blue-500 shadow-sm text-sm" data-step="3">
-                        <strong class="block text-blue-700 mb-1">Objetivo:</strong> Curar a Orfandade da Alma (A Árvore).
-                    </div>
-                    <div class="reveal-item bg-white p-4 rounded border-l-4 border-blue-500 shadow-sm text-sm" data-step="3">
-                        <strong class="block text-blue-700 mb-1">Identidade:</strong> Cultura de Honra / Não sou o meu pecado.
-                    </div>
-                    <div class="reveal-item bg-blue-50 p-4 rounded border border-blue-200 shadow-sm text-sm font-semibold text-blue-800 text-center italic" data-step="4">
-                        "A mesma força aplicada na dor, deve ser aplicada na cura."
-                    </div>
-                </div>
-            </div>
-
-            <!-- RAMO 2: O MAPA -->
-            <div class="w-full md:w-1/3 flex flex-col items-center mt-6 md:mt-0">
-                <div class="reveal-item hidden md:block w-1 h-6 bg-slate-300 -mt-6 mb-0" data-step="2"></div>
-                <div class="reveal-item bg-amber-500 text-white p-4 rounded-lg shadow-md w-full text-center font-bold mb-4 text-lg" data-step="2">2. O MAPA DA JORNADA</div>
-                <div class="space-y-3 w-full">
-                    <div class="reveal-item bg-white p-4 rounded border-l-4 border-amber-400 shadow-sm text-sm" data-step="5">
-                        <strong class="block text-amber-700 mb-1">O Requisito:</strong> Coragem para mudar a si mesmo.
-                    </div>
-                    <div class="reveal-item bg-amber-50 p-4 rounded border border-amber-200 shadow-sm text-sm font-semibold text-amber-800 text-center italic" data-step="5">
-                        "Estou convencido de que aquele que começou a boa obra... vai completá-la" (Fp 1:6)
-                    </div>
-                </div>
-            </div>
-
-            <!-- RAMO 3: A PRÁTICA -->
-            <div class="w-full md:w-1/3 flex flex-col items-center mt-6 md:mt-0">
-                <div class="reveal-item hidden md:block w-1 h-6 bg-slate-300 -mt-6 mb-0" data-step="2"></div>
-                <div class="reveal-item bg-emerald-600 text-white p-4 rounded-lg shadow-md w-full text-center font-bold mb-4 text-lg" data-step="2">3. A PRÁTICA</div>
-                <div class="space-y-4 w-full">
-                    <div class="reveal-item bg-emerald-50 p-5 rounded-lg border-2 border-emerald-500 shadow-sm card-hover" data-step="6">
-                        <div class="text-xs font-bold text-emerald-600 uppercase">Decisão 1</div>
-                        <h3 class="font-bold text-xl text-slate-800 mb-1">ADMITIR</h3>
-                        <p class="text-sm text-slate-600">"Eu tenho problemas, <strong>MAS</strong> desejo mudar de vida."</p>
-                    </div>
-                    <div class="reveal-item connector-vertical my-1" data-step="7"></div>
-                    <div class="reveal-item bg-emerald-50 p-5 rounded-lg border-2 border-emerald-500 shadow-sm card-hover" data-step="7">
-                        <div class="text-xs font-bold text-emerald-600 uppercase">Decisão 2</div>
-                        <h3 class="font-bold text-xl text-slate-800 mb-1">CONFIAR</h3>
-                        <p class="text-sm text-slate-600">Em Deus (Pai) e nas Pessoas (O grupo é a lixa).</p>
-                    </div>
+        <!-- Card O Peso do Segredo -->
+        <div class="reveal-item max-w-4xl mx-auto mb-10" data-step="21">
+            <div class="bg-white p-8 rounded-3xl shadow-xl border-l-8 border-red-500 card-hover">
+                <h3 class="font-black text-2xl text-slate-800 mb-4 uppercase">Você tem algum segredo?</h3>
+                <p class="text-slate-600 leading-relaxed mb-6 italic">
+                    "Portanto, abandonem a mentira e digam a verdade ao seu próximo..." (Efésios 4:25). O segredo é um alto custo que a alma paga para manter a negação.
+                </p>
+                <div class="bg-red-50 p-4 rounded-xl border border-red-100 text-center">
+                    <strong class="text-red-700 block">A LUZ É O REMÉDIO</strong>
                 </div>
             </div>
         </div>
 
-        <!-- ==========================================
-             TRANSIÇÃO PARA A AULA 02
-             ========================================== -->
-        <div class="reveal-item connector-long mt-8" data-step="8"></div>
+        <div class="reveal-item connector-vertical" data-step="22"></div>
 
-        <div class="reveal-item bg-red-600 text-white p-4 rounded-xl shadow-lg text-center font-bold text-2xl mb-2 w-64 mx-auto card-hover" data-step="8">
-            <i class="fa-solid fa-fire"></i> AULA 02
+        <!-- Card Promessas de Restauração -->
+        <div class="reveal-item max-w-5xl mx-auto mb-10" data-step="22">
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-slate-900 text-white p-8 rounded-3xl shadow-xl card-hover">
+                    <h4 class="text-emerald-400 font-black text-xl mb-2">RESTOREI A SAÚDE</h4>
+                    <p class="text-sm italic text-slate-400">Jeremias 30:17</p>
+                    <p class="mt-4 text-slate-200">"Restaurarei a sua saúde e curarei as suas feridas, declara o Senhor."</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-lg border border-slate-200 card-hover">
+                    <h4 class="text-emerald-600 font-black text-xl mb-2">CUROU O QUEBRANTADO</h4>
+                    <p class="text-sm italic text-slate-400">Salmo 147:3</p>
+                    <p class="mt-4 text-slate-600">"Ele cura os que têm o coração quebrantado e cuida das suas feridas."</p>
+                </div>
+            </div>
         </div>
 
-        <div class="flex flex-col gap-8 max-w-4xl mx-auto mt-6">
-            
-            <!-- DECISÃO 3 -->
-            <div class="reveal-item flex flex-col md:flex-row gap-4" data-step="9">
-                <div class="md:w-1/2 bg-white p-6 rounded-xl border-l-8 border-red-500 shadow-md">
-                    <div class="text-xs font-black text-slate-400 uppercase tracking-widest mb-1">3ª Decisão</div>
-                    <h3 class="font-black text-2xl text-slate-800 mb-2">ENTREGAR</h3>
-                    <p class="text-sm text-slate-600 mb-3">Eu entrego o controle da minha vida e vontade a Cristo. Superar o sentimento de inadequação de quem tenta controlar tudo.</p>
-                    <p class="text-xs font-bold text-red-500 bg-red-50 p-2 rounded">"Venham a mim os sobrecarregados..." (Mt 11:28)</p>
-                </div>
-                <div class="md:w-1/2 bg-slate-800 text-white p-6 rounded-xl shadow-md">
-                    <h4 class="font-bold text-red-400 mb-2"><i class="fa-solid fa-comment-dots"></i> Insights da Turma</h4>
-                    <p class="text-sm mb-3"><strong class="text-white">O Dilema do Salvador:</strong> A intromissão nasce do controle. A verdadeira compaixão sabe que a dor é didática. É preciso entregar a vida do outro a Deus.</p>
-                    <p class="text-sm"><strong class="text-white">Saudades do Futuro:</strong> (Lei da Semeadura). Plantar a entrega hoje para ter saudade da colheita gloriosa de amanhã.</p>
-                </div>
+        <div class="reveal-item connector-vertical" data-step="23"></div>
+
+        <!-- Card Bill Johnson & Impacto -->
+        <div class="reveal-item max-w-4xl mx-auto mb-12 text-center" data-step="23">
+            <div class="bg-emerald-600 text-white p-10 rounded-3xl shadow-2xl relative">
+                <i class="fa-solid fa-quote-left text-4xl text-emerald-300 mb-4"></i>
+                <h3 class="text-xl md:text-2xl font-black mb-4 uppercase">"Quando Deus invade a vida de uma pessoa, as coisas mudam."</h3>
+                <p class="text-sm text-emerald-100 font-bold tracking-widest">Bill Johnson</p>
             </div>
-            
-            <div class="reveal-item connector-aula2" data-step="10"></div>
-
-            <!-- DECISÃO 4 -->
-            <div class="reveal-item flex flex-col md:flex-row gap-4" data-step="10">
-                <div class="md:w-1/2 bg-white p-6 rounded-xl border-l-8 border-red-500 shadow-md">
-                    <div class="text-xs font-black text-slate-400 uppercase tracking-widest mb-1">4ª Decisão</div>
-                    <h3 class="font-black text-2xl text-slate-800 mb-2">DEPENDER</h3>
-                    <p class="text-sm text-slate-600 mb-3">Eu preciso depender. Quebrar os vícios que geram falsa sensação de prazer e depositar a esperança no Senhor.</p>
-                    <p class="text-xs font-bold text-red-500 bg-red-50 p-2 rounded">"Busquem primeiro o Reino de Deus..." (Mt 6:33)</p>
-                </div>
-                <div class="md:w-1/2 bg-slate-800 text-white p-6 rounded-xl shadow-md">
-                    <h4 class="font-bold text-red-400 mb-2"><i class="fa-solid fa-comment-dots"></i> A Reflexão</h4>
-                    <p class="text-sm"><strong class="text-white">Felicidade vs Automotivação:</strong> Depender da aprovação alheia para ser feliz é ser escravo. Depender de Deus resgata o nosso motor interno (Automotivação), agindo pelo propósito e não por elogios.</p>
-                </div>
-            </div>
-
-            <div class="reveal-item connector-aula2" data-step="11"></div>
-
-            <!-- DECISÃO 5 -->
-            <div class="reveal-item flex flex-col md:flex-row gap-4" data-step="11">
-                <div class="md:w-1/2 bg-white p-6 rounded-xl border-l-8 border-red-500 shadow-md">
-                    <div class="text-xs font-black text-slate-400 uppercase tracking-widest mb-1">5ª Decisão</div>
-                    <h3 class="font-black text-2xl text-slate-800 mb-2">OBEDECER</h3>
-                    <p class="text-sm text-slate-600 mb-3">Eu vou obedecer. Amar a Deus, a si mesmo e ao próximo. Vencer a religiosidade e as experiências do passado.</p>
-                    <p class="text-xs font-bold text-red-500 bg-red-50 p-2 rounded">"Ame o seu próximo como a si mesmo." (Mt 22:39)</p>
-                </div>
-                <div class="md:w-1/2 bg-slate-800 text-white p-6 rounded-xl shadow-md">
-                    <h4 class="font-bold text-red-400 mb-2"><i class="fa-solid fa-comment-dots"></i> Debate da Turma</h4>
-                    <p class="text-sm mb-3"><strong class="text-white">Perdoar vs Conviver:</strong> O perdão é unilateral e obrigatório. Convívio exige confiança. Amar de longe também é amor-próprio.</p>
-                    <p class="text-sm"><strong class="text-white">O Mito da Perfeição:</strong> Ausência de crise não é perfeição, é estabilidade. Achar que somos perfeitos nos dias bons é o gatilho do Orgulho.</p>
-                </div>
-            </div>
-
-            <div class="reveal-item connector-aula2" data-step="12"></div>
-
-            <!-- DECISÃO 6 -->
-            <div class="reveal-item flex flex-col md:flex-row gap-4" data-step="12">
-                <div class="md:w-1/2 bg-white p-6 rounded-xl border-l-8 border-red-500 shadow-md">
-                    <div class="text-xs font-black text-slate-400 uppercase tracking-widest mb-1">6ª Decisão</div>
-                    <h3 class="font-black text-2xl text-slate-800 mb-2">CONFESSAR</h3>
-                    <p class="text-sm text-slate-600 mb-3">Eu vou falar. Tirar a máscara de que "está tudo bem" e admitir falhas de caráter sem vitimismo.</p>
-                    <p class="text-xs font-bold text-red-500 bg-red-50 p-2 rounded">"Confessem os seus pecados uns aos outros..." (Tg 5:16)</p>
-                </div>
-                <div class="md:w-1/2 bg-slate-800 text-white p-6 rounded-xl shadow-md">
-                    <h4 class="font-bold text-red-400 mb-2"><i class="fa-solid fa-comment-dots"></i> As Armadilhas do Ego</h4>
-                    <p class="text-sm mb-3"><strong class="text-white">Compensação:</strong> Lembrar logo de uma qualidade ao confessar um erro só para amortecer a dor e fugir da vulnerabilidade.</p>
-                    <p class="text-sm"><strong class="text-white">Vitimismo:</strong> Reconhecer o erro, mas justificar culpando o outro. Isso não é confissão, é transferência de culpa.</p>
-                </div>
-            </div>
-
-            <div class="reveal-item connector-aula2" data-step="13"></div>
-
-            <!-- DECISÃO 7 -->
-            <div class="reveal-item flex flex-col md:flex-row gap-4" data-step="13">
-                <div class="md:w-1/2 bg-white p-6 rounded-xl border-l-8 border-red-500 shadow-md">
-                    <div class="text-xs font-black text-slate-400 uppercase tracking-widest mb-1">7ª Decisão</div>
-                    <h3 class="font-black text-2xl text-slate-800 mb-2">REPARAR</h3>
-                    <p class="text-sm text-slate-600 mb-3">Eu me disponho a reparar. Viver as 3 fases do perdão (ao próximo, pedir perdão e a si mesmo).</p>
-                    <p class="text-xs font-bold text-red-500 bg-red-50 p-2 rounded">"Façam aos outros o que desejam que façam." (Lc 6:31)</p>
-                </div>
-                <div class="md:w-1/2 bg-slate-800 text-white p-6 rounded-xl shadow-md">
-                    <h4 class="font-bold text-red-400 mb-2"><i class="fa-solid fa-comment-dots"></i> O Peso do Passado</h4>
-                    <p class="text-sm">A decisão errada do passado foi pautada na circunstância e na mentalidade da época. É covardia julgar o seu "eu do passado" com a maturidade de hoje. A Graça liberta da culpa.</p>
-                </div>
-            </div>
-
-            <div class="reveal-item connector-aula2" data-step="14"></div>
-
-            <!-- DECISÃO 8 -->
-            <div class="reveal-item flex flex-col md:flex-row gap-4" data-step="14">
-                <div class="md:w-1/2 bg-white p-6 rounded-xl border-l-8 border-red-500 shadow-md">
-                    <div class="text-xs font-black text-slate-400 uppercase tracking-widest mb-1">8ª Decisão</div>
-                    <h3 class="font-black text-2xl text-slate-800 mb-2">COMPARTILHAR</h3>
-                    <p class="text-sm text-slate-600 mb-3">Eu vou repartir. Mudar a forma de pensar, abandonar os padrões do mundo e ajudar outros.</p>
-                    <p class="text-xs font-bold text-red-500 bg-red-50 p-2 rounded">"A bênção maior é dar do que receber." (Atos 20:35)</p>
-                </div>
-                <div class="md:w-1/2 bg-slate-800 text-white p-6 rounded-xl shadow-md">
-                    <h4 class="font-bold text-red-400 mb-2"><i class="fa-solid fa-comment-dots"></i> Metamorfose</h4>
-                    <p class="text-sm">O processo de transformar lagartas em borboletas. Lagartas rastejam no lixo; borboletas voam alto, enfeitam o ambiente e escolhem onde pousar.</p>
-                </div>
-            </div>
-
-            <div class="reveal-item connector-aula2" data-step="15"></div>
-
-            <!-- FECHAMENTO DE OURO: O PODER DO PROTOCOLO (CORRIGIDO) -->
-            <div class="reveal-item bg-gradient-to-r from-red-600 to-red-800 text-white p-8 rounded-2xl shadow-2xl text-center card-hover mt-4" data-step="15">
-                <h3 class="font-black text-3xl mb-4"><i class="fa-solid fa-hand"></i> O Poder do Nosso Protocolo Diário</h3>
-                <p class="text-red-100 font-medium mb-2 text-lg">A sabedoria transformadora do Celebrando a Recuperação ("Sou filho amado" e "Estou me recuperando").</p>
-                <p class="text-red-200 text-sm mb-6 italic opacity-90">Para fins didáticos, um paralelo com a ilustração dos "5 Dedos" de Pablo Marçal:</p>
-                
-                <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
-                    <div class="bg-black/20 p-4 rounded-lg backdrop-blur-sm">
-                        <div class="text-3xl mb-2">📍</div>
-                        <div class="font-bold text-base leading-tight">A Roda de Partilha</div>
-                        <div class="text-xs text-red-300 mt-2 font-light">Novos Lugares</div>
-                    </div>
-                    <div class="bg-black/20 p-4 rounded-lg backdrop-blur-sm">
-                        <div class="text-3xl mb-2">👥</div>
-                        <div class="font-bold text-base leading-tight">Grupo & Padrinhos</div>
-                        <div class="text-xs text-red-300 mt-2 font-light">Novas Pessoas</div>
-                    </div>
-                    <div class="bg-black/20 p-4 rounded-lg backdrop-blur-sm">
-                        <div class="text-3xl mb-2">🧠</div>
-                        <div class="font-bold text-base leading-tight">Identidade em Cristo</div>
-                        <div class="text-xs text-red-300 mt-2 font-light">Novos Pensamentos</div>
-                    </div>
-                    <div class="bg-black/20 p-4 rounded-lg backdrop-blur-sm">
-                        <div class="text-3xl mb-2">⚡</div>
-                        <div class="font-bold text-base leading-tight">As 8 Decisões</div>
-                        <div class="text-xs text-red-300 mt-2 font-light">Novas Ações</div>
-                    </div>
-                    <div class="bg-black/20 p-4 rounded-lg backdrop-blur-sm col-span-2 md:col-span-1">
-                        <div class="text-3xl mb-2">🏆</div>
-                        <div class="font-bold text-base leading-tight">Destino Seguro</div>
-                        <div class="text-xs text-red-300 mt-2 font-light">Novos Resultados</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ==========================================
-                 TRANSIÇÃO PARA A AULA 03
-                 ========================================== -->
-            <div class="reveal-item connector-long mt-8" data-step="16"></div>
-
-            <div class="reveal-item bg-slate-600 text-white p-4 rounded-xl shadow-lg text-center font-bold text-2xl mb-6 w-64 mx-auto card-hover" data-step="16">
-                <i class="fa-solid fa-water"></i> AULA 03
-                <span class="block text-xs font-normal text-slate-300 mt-1 uppercase tracking-widest">Mergulho Profundo</span>
-            </div>
-
-            <div class="reveal-item flex justify-center mb-8" data-step="17">
-                <div class="bg-white p-8 rounded-2xl border-t-8 border-emerald-500 shadow-xl max-w-2xl w-full text-center card-hover">
-                    <div class="text-sm font-bold text-emerald-600 uppercase tracking-widest mb-3">Semana 02/30</div>
-                    <h2 class="text-4xl md:text-5xl font-black text-slate-800 mb-1">DECISÃO 1</h2>
-                    <h3 class="text-3xl font-extrabold text-slate-700 mb-5">ADMITIR</h3>
-                    
-                    <div class="inline-block bg-slate-800 text-white px-6 py-2 rounded-full text-xl font-medium mb-8 shadow-md">
-                        "Eu tenho problemas."
-                    </div>
-                    
-                    <div class="bg-emerald-50 p-6 rounded-xl border border-emerald-100 relative">
-                        <i class="fa-solid fa-quote-left text-emerald-200 text-4xl absolute top-4 left-4"></i>
-                        <p class="text-slate-600 italic text-lg mb-3 relative z-10 px-6">
-                            "Examina-me, ó Deus, e conhece meu coração; prova-me e vê meus pensamentos."
-                        </p>
-                        <p class="font-bold text-emerald-800 text-lg relative z-10">Salmo 139:23</p>
-                    </div>
-                </div>
-            </div>
-
         </div>
+
+        <div class="reveal-item connector-long" data-step="24"></div>
+
+        <!-- Pergunta Facilitadora Final -->
+        <div class="reveal-item flex justify-center mb-20" data-step="24">
+            <div class="bg-slate-800 p-10 rounded-3xl shadow-2xl max-w-2xl w-full text-center border-b-8 border-emerald-500">
+                <h4 class="text-emerald-400 font-bold text-sm uppercase tracking-widest mb-4">Reflexão Final</h4>
+                <p class="text-white text-2xl font-black italic">
+                    "O que atrapalha o seu relacionamento com Jesus hoje?"
+                </p>
+                <div class="mt-8 text-xs text-slate-400 uppercase font-bold">Fim da Semana 02</div>
+            </div>
+        </div>
+
     </div>
 
-    <!-- Barra Flutuante de Controle -->
-    <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 shadow-[0_-10px_15px_-3px_rgba(0,0,0,0.1)] p-4 flex justify-between items-center z-50">
-        <div class="text-slate-500 text-sm font-medium">
-            Passo: <span id="step-counter" class="font-bold text-red-600 bg-red-50 px-2 py-1 rounded">0</span> / 17
-        </div>
+    <!-- Barra de Controle -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 shadow-lg p-4 flex justify-between items-center z-50">
+        <div class="text-slate-500 text-sm font-medium">Passo: <span id="step-counter" class="font-bold text-emerald-600 bg-emerald-50 px-2 py-1 rounded">0</span> / 24</div>
         <div class="flex gap-3">
-            <button onclick="prevStep()" class="px-5 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg font-bold transition-all shadow-sm">
-                ⬅️ <span class="hidden md:inline">Voltar</span>
-            </button>
-            <button onclick="nextStep()" class="px-6 py-2.5 bg-red-600 hover:bg-red-700 text-white rounded-lg font-bold transition-all shadow-md flex items-center gap-2">
-                Avançar ➡️ <span class="text-xs font-normal opacity-70 hidden md:inline">(Espaço)</span>
-            </button>
+            <button onclick="prevStep()" class="px-5 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg font-bold transition-all shadow-sm">⬅️ Voltar</button>
+            <button onclick="nextStep()" class="px-6 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg font-bold transition-all shadow-md flex items-center gap-2">Avançar ➡️</button>
         </div>
     </div>
 
-    <!-- Lógica JavaScript -->
     <script>
         let currentStep = 0;
-        const maxSteps = 17;
-
-        function updateCounter() {
-            document.getElementById('step-counter').innerText = currentStep;
-        }
-
-        function scrollToElement(element) {
-            setTimeout(() => {
-                element.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            }, 100);
-        }
-
+        const maxSteps = 24;
+        function updateCounter() { document.getElementById('step-counter').innerText = currentStep; }
+        function scrollToElement(element) { setTimeout(() => { element.scrollIntoView({ behavior: 'smooth', block: 'center' }); }, 100); }
         function nextStep() {
             if (currentStep < maxSteps) {
                 currentStep++;
                 const elements = document.querySelectorAll(`[data-step="${currentStep}"]`);
                 elements.forEach(el => el.classList.add('revealed'));
                 updateCounter();
-                
-                if(elements.length > 0 && currentStep > 7) {
-                    scrollToElement(elements[0]);
-                }
+                if(elements.length > 0) scrollToElement(elements[0]);
             }
         }
-
         function prevStep() {
             if (currentStep > 0) {
                 const elements = document.querySelectorAll(`[data-step="${currentStep}"]`);
                 elements.forEach(el => el.classList.remove('revealed'));
                 currentStep--;
                 updateCounter();
-                
-                if(currentStep >= 1) {
-                    const prevElements = document.querySelectorAll(`[data-step="${currentStep}"]`);
-                    if(prevElements.length > 0) {
-                        scrollToElement(prevElements[0]);
-                    }
-                } else {
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                }
+                const prevElements = document.querySelectorAll(`[data-step="${currentStep}"]`);
+                if(prevElements.length > 0) scrollToElement(prevElements[0]);
+                else window.scrollTo({ top: 0, behavior: 'smooth' });
             }
         }
-
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter' || e.key === 'ArrowRight' || e.key === ' ') {
-                e.preventDefault(); 
-                nextStep();
-            } else if (e.key === 'ArrowLeft' || e.key === 'Backspace') {
-                e.preventDefault();
-                prevStep();
-            }
-        });
     </script>
 </body>
 </html>
