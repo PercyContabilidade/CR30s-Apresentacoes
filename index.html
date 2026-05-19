@@ -9,38 +9,23 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
         body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
-        
         .connector-vertical { width: 4px; height: 30px; background-color: #cbd5e1; margin: 0 auto; }
         .connector-long { width: 4px; height: 60px; background: linear-gradient(to bottom, #cbd5e1, #ef4444); margin: 0 auto; }
-        
-        .reveal-item {
-            opacity: 0;
-            transform: translateY(30px) scale(0.95);
-            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-            visibility: hidden;
-            position: relative;
-        }
-        .reveal-item.revealed {
-            opacity: 1;
-            transform: translateY(0) scale(1);
-            visibility: visible;
-        }
-        .card-hover:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-        }
+        .reveal-item { opacity: 0; transform: translateY(30px) scale(0.95); transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1); visibility: hidden; position: relative; }
+        .reveal-item.revealed { opacity: 1; transform: translateY(0) scale(1); visibility: visible; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; }
+        .well-glow { box-shadow: 0 0 20px rgba(168, 85, 247, 0.4); }
     </style>
 </head>
 <body class="bg-slate-50 min-h-screen p-4 md:p-8 text-slate-800 pb-96">
 
     <div class="max-w-6xl mx-auto">
-        <!-- HEADER PRINCIPAL -->
+        <!-- HEADER -->
         <div class="text-center mb-16">
             <h1 class="text-4xl md:text-6xl font-extrabold text-red-600 mb-4 drop-shadow-sm uppercase tracking-tighter">
                 <i class="fa-solid fa-fire-flame-curved"></i> Mapa Mental: CR30s
             </h1>
-            <p class="text-slate-500 font-bold text-lg uppercase tracking-widest">Grandes Decisões, Destinos Seguros</p>
+            <p class="text-slate-500 font-bold text-lg uppercase tracking-widest text-center">Do Abismo da Rejeição à Realeza de Filho</p>
         </div>
 
         <!-- ==========================================
@@ -52,21 +37,18 @@
         <div class="reveal-item connector-vertical" data-step="2"></div>
 
         <div class="flex flex-col md:flex-row justify-center items-start gap-6 relative mb-12">
-            <!-- Ramo Intro -->
             <div class="w-full md:w-1/3 flex flex-col items-center">
                 <div class="reveal-item bg-blue-600 text-white p-4 rounded-lg shadow-md w-full text-center font-bold mb-4" data-step="2">1. INTRODUÇÃO</div>
                 <div class="reveal-item bg-white p-4 rounded border-l-4 border-blue-500 shadow-sm text-sm w-full" data-step="3">
                     <strong class="text-blue-700">Visão:</strong> Curar a Orfandade da Alma e restabelecer a identidade filial.
                 </div>
             </div>
-            <!-- Ramo Missão -->
             <div class="w-full md:w-1/3 flex flex-col items-center">
                 <div class="reveal-item bg-amber-500 text-white p-4 rounded-lg shadow-md w-full text-center font-bold mb-4" data-step="4">2. MISSÃO</div>
                 <div class="reveal-item bg-white p-4 rounded border-l-4 border-amber-500 shadow-sm text-sm w-full" data-step="4">
                     Levar esperança e possibilitar um real encontro com Jesus para cura de traumas e vícios.
                 </div>
             </div>
-            <!-- Ramo Decisões -->
             <div class="w-full md:w-1/3 flex flex-col items-center">
                 <div class="reveal-item bg-emerald-600 text-white p-4 rounded-lg shadow-md w-full text-center font-bold mb-4" data-step="5">3. AS DECISÕES</div>
                 <div class="reveal-item bg-white p-4 rounded border-2 border-emerald-500 shadow-sm text-sm w-full" data-step="5">
@@ -76,7 +58,7 @@
         </div>
 
         <!-- ==========================================
-             AULA 02: MERGULHO PROFUNDO (RELACIONAMENTOS)
+             AULA 02: RELACIONAMENTOS & NEGAÇÃO
              ========================================== -->
         <div class="reveal-item connector-long" data-step="6"></div>
         <div class="reveal-item bg-blue-700 text-white p-4 rounded-xl shadow-lg text-center font-bold text-2xl mb-8 w-72 mx-auto" data-step="7">
@@ -97,7 +79,6 @@
 
         <div class="reveal-item connector-vertical" data-step="9"></div>
 
-        <!-- Mecânica da Negação -->
         <div class="reveal-item max-w-4xl mx-auto mb-10" data-step="9">
             <div class="bg-slate-900 text-white p-8 rounded-3xl shadow-2xl relative overflow-hidden">
                 <div class="absolute right-0 bottom-0 text-9xl opacity-10">🐘</div>
@@ -105,60 +86,26 @@
                 <p class="text-slate-300 leading-relaxed text-sm mb-6">
                     A negação é o ato de ignorar, disfarçar ou esquecer intencionalmente situações que causam dor. É um falso sistema de crenças para fugir da verdade.
                 </p>
-                <div class="bg-red-500/20 p-4 rounded-lg border border-red-500/40 italic text-xs">
-                    "Não perdoar é como tomar um copo de veneno esperando que o outro morra."
-                </div>
-            </div>
-        </div>
-
-        <div class="reveal-item connector-vertical" data-step="10"></div>
-
-        <!-- Adão e Eva / Segredo -->
-        <div class="reveal-item max-w-4xl mx-auto mb-10" data-step="10">
-            <div class="bg-white p-8 rounded-2xl border-t-8 border-slate-800 shadow-xl text-center">
-                <h3 class="font-black text-xl text-slate-800 mb-4 uppercase">O Ciclo do Segredo (Adão e Eva)</h3>
-                <p class="text-slate-500 text-sm mb-6 italic">"O segredo adoece. A luz sempre é o melhor remédio."</p>
-                <div class="grid grid-cols-3 gap-2">
-                    <div class="bg-slate-50 p-2 rounded text-[10px] font-bold uppercase">Medo</div>
-                    <div class="bg-slate-50 p-2 rounded text-[10px] font-bold uppercase">Negação</div>
-                    <div class="bg-slate-50 p-2 rounded text-[10px] font-bold uppercase text-red-600">Culpar o Outro</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="reveal-item connector-vertical" data-step="11"></div>
-
-        <!-- Protocolo Diário -->
-        <div class="reveal-item bg-gradient-to-r from-red-600 to-red-800 text-white p-8 rounded-2xl shadow-2xl text-center mb-10" data-step="11">
-            <h3 class="font-black text-2xl mb-4 uppercase">Protocolo Diário</h3>
-            <div class="grid grid-cols-2 md:grid-cols-5 gap-3">
-                <div class="bg-black/20 p-3 rounded-lg text-[10px] font-bold uppercase">Roda Partilha</div>
-                <div class="bg-black/20 p-3 rounded-lg text-[10px] font-bold uppercase">Padrinhos</div>
-                <div class="bg-black/20 p-3 rounded-lg text-[10px] font-bold uppercase">Identidade</div>
-                <div class="bg-black/20 p-3 rounded-lg text-[10px] font-bold uppercase">8 Decisões</div>
-                <div class="bg-black/20 p-3 rounded-lg text-[10px] font-bold uppercase">Destino Seguro</div>
             </div>
         </div>
 
         <!-- ==========================================
-             AULA 03: O CONFIDENTE (NOVA)
+             AULA 03: O CONFIDENTE
              ========================================== -->
-        <div class="reveal-item connector-long" data-step="12"></div>
-        <div class="reveal-item bg-emerald-600 text-white p-4 rounded-xl shadow-lg text-center font-bold text-2xl mb-8 w-72 mx-auto" data-step="13">
+        <div class="reveal-item connector-long" data-step="10"></div>
+        <div class="reveal-item bg-emerald-600 text-white p-4 rounded-xl shadow-lg text-center font-bold text-2xl mb-8 w-72 mx-auto" data-step="11">
             AULA 03: O CONFIDENTE
         </div>
 
-        <!-- Fórmula e Instâncias -->
-        <div class="reveal-item grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto mb-10" data-step="14">
+        <div class="reveal-item grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto mb-10" data-step="12">
             <div class="bg-white p-8 rounded-2xl border-l-8 border-emerald-500 shadow-xl card-hover">
                 <h3 class="font-black text-2xl text-slate-800 mb-4">A FÓRMULA DA CURA</h3>
                 <div class="bg-emerald-50 p-4 rounded-lg text-emerald-800 font-black text-center text-lg">
                     ADMITIR + DECISÃO + CONFIDENTE = CURA
                 </div>
-                <p class="mt-4 text-sm text-slate-500 italic">"O confidente é o espelho da verdade que impede o autoengano."</p>
             </div>
             <div class="bg-slate-900 text-white p-8 rounded-2xl shadow-xl card-hover">
-                <h4 class="text-emerald-400 font-bold mb-4 uppercase italic"><i class="fa-solid fa-layer-group"></i> 3 Instâncias de Ajuda</h4>
+                <h4 class="text-emerald-400 font-bold mb-4 uppercase italic">3 Instâncias de Ajuda</h4>
                 <ul class="space-y-2 text-sm">
                     <li><i class="fa-solid fa-cross text-red-500 mr-2"></i> <strong>Jesus:</strong> Conecta com Deus.</li>
                     <li><i class="fa-solid fa-users text-blue-400 mr-2"></i> <strong>Grupo:</strong> Conecta com os outros.</li>
@@ -167,99 +114,188 @@
             </div>
         </div>
 
-        <div class="reveal-item connector-vertical" data-step="15"></div>
+        <!-- ==========================================
+             AULA 04: OS TRÊS ESTÁGIOS DA NEGAÇÃO
+             ========================================== -->
+        <div class="reveal-item connector-long" data-step="13"></div>
+        <div class="reveal-item bg-red-700 text-white p-4 rounded-xl shadow-lg text-center font-bold text-2xl mb-8 w-80 mx-auto card-hover" data-step="14">
+            AULA 04: ESTÁGIOS DA NEGAÇÃO
+        </div>
 
-        <!-- Perfil do Confidente -->
-        <div class="reveal-item max-w-4xl mx-auto mb-10" data-step="15">
-            <div class="bg-white p-6 rounded-2xl shadow-md border border-slate-200">
-                <h3 class="text-center font-bold text-slate-700 mb-4 uppercase tracking-widest text-sm">Características do Confidente Ideal</h3>
-                <div class="flex flex-wrap justify-center gap-3 text-[10px] font-black uppercase">
-                    <span class="bg-slate-100 px-4 py-2 rounded-full border border-slate-200">Confiável</span>
-                    <span class="bg-slate-100 px-4 py-2 rounded-full border border-slate-200 text-red-600">Não Julga</span>
-                    <span class="bg-slate-100 px-4 py-2 rounded-full border border-slate-200">Ora com você</span>
-                    <span class="bg-slate-100 px-4 py-2 rounded-full border border-slate-200 text-red-600">Confronta</span>
-                    <span class="bg-slate-100 px-4 py-2 rounded-full border border-slate-200 text-emerald-600">Te Ama</span>
+        <div class="reveal-item max-w-5xl mx-auto mb-10" data-step="15">
+            <div class="grid md:grid-cols-3 gap-4">
+                <div class="bg-white p-6 rounded-2xl shadow-md border-t-4 border-blue-400 text-center card-hover">
+                    <h4 class="font-black text-blue-600 uppercase mb-2">Hábito</h4>
+                    <p class="text-[10px] text-slate-500">Repetições fixas de rotinas.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-md border-t-4 border-amber-400 text-center card-hover">
+                    <h4 class="font-black text-amber-600 uppercase mb-2">Compulsão</h4>
+                    <p class="text-[10px] text-slate-500">Impulso irracional por alívio.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-md border-t-4 border-red-400 text-center card-hover">
+                    <h4 class="font-black text-red-600 uppercase mb-2">Vício</h4>
+                    <p class="text-[10px] text-slate-500">Repetição degenerativa da alma.</p>
                 </div>
             </div>
         </div>
 
-        <div class="reveal-item connector-vertical" data-step="16"></div>
+        <!-- ==========================================
+             AULA 05: COMPENSAÇÕES, DEFESAS E 3 "As"
+             ========================================== -->
+        <div class="reveal-item connector-long" data-step="16"></div>
+        <div class="reveal-item bg-purple-700 text-white p-4 rounded-xl shadow-lg text-center font-bold text-2xl mb-8 w-96 mx-auto card-hover" data-step="17">
+            AULA 05: COMPENSAÇÕES & DEFESAS
+            <span class="block text-xs font-normal text-purple-200 mt-1 uppercase tracking-widest">Semana 05/30</span>
+        </div>
 
-        <!-- Parábola da Vaquinha -->
-        <div class="reveal-item max-w-4xl mx-auto mb-10" data-step="16">
-            <div class="bg-gradient-to-br from-slate-800 to-slate-900 text-white p-10 rounded-3xl shadow-2xl relative overflow-hidden card-hover">
-                <div class="absolute right-0 bottom-0 text-9xl opacity-10">🐄</div>
-                <h3 class="text-2xl font-black text-amber-400 mb-4 italic">A Parábola da Vaquinha</h3>
-                <p class="text-slate-300 leading-relaxed mb-6 text-sm">
-                    Às vezes, Deus permite que a nossa "vaquinha" (orgulho, zona de conforto) morra para que tenhamos coragem de construir um destino de abundância.
+        <!-- O DNA Único -->
+        <div class="reveal-item max-w-5xl mx-auto mb-10" data-step="18">
+            <div class="bg-white p-8 rounded-3xl shadow-xl border-l-8 border-purple-600 flex flex-col md:flex-row gap-8 items-center card-hover">
+                <div class="md:w-2/3">
+                    <span class="text-xs font-black text-purple-600 uppercase tracking-widest">Identidade Inabalável</span>
+                    <h3 class="font-black text-3xl text-slate-800 mt-1 mb-4">Você é Extraordinário</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Seu DNA, frequência cardíaca e impressões digitais são assinaturas únicas de Deus. Você não é fruto do acaso ou de um erro humano, mas nascido do próprio Criador para uma vida de abundância.
+                    </p>
+                </div>
+                <div class="md:w-1/3 bg-purple-50 p-6 rounded-2xl border border-purple-100 text-center">
+                    <div class="text-purple-600 text-4xl mb-2"><i class="fa-solid fa-dna animate-pulse"></i></div>
+                    <strong class="block text-purple-900 font-bold text-sm">Salmo 139:14</strong>
+                    <span class="text-[10px] text-purple-700">DNA da Realeza Celeste</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="reveal-item connector-vertical" data-step="19"></div>
+
+        <!-- A Raiz: Orfandade -->
+        <div class="reveal-item max-w-4xl mx-auto mb-10" data-step="19">
+            <div class="bg-slate-900 text-white p-8 rounded-3xl shadow-2xl relative overflow-hidden card-hover">
+                <span class="text-xs font-black text-red-500 uppercase tracking-widest">A Raiz do Problema</span>
+                <h3 class="font-black text-3xl text-red-400 mt-1 mb-4 uppercase">Orfandade & Rejeição</h3>
+                <p class="text-slate-300 text-sm leading-relaxed">
+                    A raiz de todo desajuste emocional é a orfandade: o sentimento de não pertencimento e de não ser amado. Esse vazio faz com que o homem fuja da verdade, criando defesas artificiais e disfarces (como Adão e Eva no jardim).
                 </p>
-                <div class="text-xs font-bold text-amber-500 uppercase tracking-widest bg-white/10 p-2 rounded-lg inline-block">
-                    Lição: A perda pode ser o início do sucesso.
-                </div>
             </div>
         </div>
 
-        <div class="reveal-item connector-vertical" data-step="17"></div>
+        <div class="reveal-item connector-vertical" data-step="20"></div>
 
-        <!-- 5 Passos da Prontidão -->
-        <div class="reveal-item max-w-5xl mx-auto mb-10" data-step="17">
-            <div class="bg-white p-8 rounded-3xl shadow-xl border border-slate-100">
-                <h3 class="text-center font-black text-xl text-slate-800 mb-8 uppercase tracking-widest">5 Passos para a Prontidão</h3>
-                <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
-                    <div class="p-4 bg-slate-50 rounded-xl text-center"><div class="text-xl mb-2">A</div><div class="text-[9px] font-bold uppercase">Esteja Pronto</div></div>
-                    <div class="p-4 bg-red-50 rounded-xl text-center text-red-800"><div class="text-xl mb-2">B</div><div class="text-[9px] font-bold uppercase">Vença a Vergonha</div></div>
-                    <div class="p-4 bg-slate-50 rounded-xl text-center"><div class="text-xl mb-2">C</div><div class="text-[9px] font-bold uppercase">Tenha Coragem</div></div>
-                    <div class="p-4 bg-slate-50 rounded-xl text-center"><div class="text-xl mb-2">D</div><div class="text-[9px] font-bold uppercase">Seja Honesto</div></div>
-                    <div class="p-4 bg-emerald-50 rounded-xl text-center text-emerald-800"><div class="text-xl mb-2">E</div><div class="text-[9px] font-bold uppercase">Planeje-se</div></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- FINAL: PERGUNTA DE OURO -->
-        <div class="reveal-item connector-long" data-step="18"></div>
-        <div class="reveal-item max-w-2xl mx-auto mb-40" data-step="18">
-            <div class="bg-slate-900 text-white p-12 rounded-3xl shadow-2xl border-b-8 border-emerald-500 text-center">
-                <h4 class="text-emerald-400 font-bold text-sm uppercase tracking-widest mb-4">Reflexão Aula 03</h4>
-                <p class="text-2xl md:text-3xl font-black mb-6 italic">
-                    "O que atrapalha o seu relacionamento com Jesus hoje?"
+        <!-- O Poço Poluído -->
+        <div class="reveal-item max-w-4xl mx-auto mb-10" data-step="20">
+            <div class="bg-white p-8 rounded-3xl shadow-xl border-2 border-purple-300 relative overflow-hidden card-hover well-glow">
+                <div class="absolute -right-6 -bottom-6 opacity-5 text-9xl text-purple-600"><i class="fa-solid fa-droplet"></i></div>
+                <span class="text-xs font-black text-purple-600 uppercase tracking-widest">Ilustração de Ricky Chelette</span>
+                <h3 class="font-black text-3xl text-slate-800 mt-1 mb-4 uppercase">O Poço Poluído</h3>
+                <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                    A água limpa e cristalina no fundo do poço reflete sua verdadeira imagem divina. Mas abusos, rejeição e erros jogam "lama" sobre ela. A sujeira obscurece o reflexo, mas <strong>o plano original de Deus continua intacto lá embaixo</strong>, aguardando a purificação de Cristo.
                 </p>
-                <div class="text-[10px] text-slate-500 uppercase font-bold">
-                    Efésios 4:25 | Jeremias 30:17 | Salmo 147:3
+                <div class="bg-purple-900 text-purple-100 p-4 rounded-xl text-xs font-bold italic border border-purple-800 text-center">
+                    "Fomos lavados, santificados e justificados em Cristo!" (1 Coríntios 6:11)
                 </div>
+            </div>
+        </div>
+
+        <div class="reveal-item connector-vertical" data-step="21"></div>
+
+        <!-- Os Três As -->
+        <div class="reveal-item max-w-5xl mx-auto mb-10" data-step="21">
+            <h3 class="text-center font-black text-2xl text-slate-800 mb-8 uppercase tracking-widest text-purple-700">Os 3 "As" da Identidade</h3>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Afirmação -->
+                <div class="bg-slate-900 text-white p-6 rounded-2xl shadow-lg card-hover text-center">
+                    <div class="text-amber-400 text-3xl mb-3"><i class="fa-solid fa-comment-dots"></i></div>
+                    <h4 class="font-black text-lg mb-2">Afirmação</h4>
+                    <p class="text-[11px] text-slate-400">A bênção do Pai sobre a identidade. "Este é meu Filho amado." (Mateus 3:17)</p>
+                </div>
+                <!-- Atenção -->
+                <div class="bg-slate-900 text-white p-6 rounded-2xl shadow-lg card-hover text-center">
+                    <div class="text-amber-400 text-3xl mb-3"><i class="fa-solid fa-eye"></i></div>
+                    <h4 class="font-black text-lg mb-2">Atenção</h4>
+                    <p class="text-[11px] text-slate-400">Desejo de conexão real. Saber que você tem valor e não é apenas uma engrenagem.</p>
+                </div>
+                <!-- Afeto -->
+                <div class="bg-slate-900 text-white p-6 rounded-2xl shadow-lg card-hover text-center">
+                    <div class="text-amber-400 text-3xl mb-3"><i class="fa-solid fa-handshake-angle"></i></div>
+                    <h4 class="font-black text-lg mb-2">Afeto</h4>
+                    <p class="text-[11px] text-slate-400">Conexão física saudável e pura, estabelecendo limites que honram ao Senhor.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="reveal-item connector-vertical" data-step="22"></div>
+
+        <!-- Sexualidade Distorcida -->
+        <div class="reveal-item max-w-4xl mx-auto mb-10" data-step="22">
+            <div class="bg-purple-950 text-white p-10 rounded-3xl shadow-2xl relative overflow-hidden card-hover border-l-8 border-purple-500">
+                <span class="text-xs font-black text-purple-400 uppercase tracking-widest">O Templo do Espírito</span>
+                <h3 class="font-black text-3xl mt-1 mb-4 uppercase text-purple-300">Sexualidade & Limites</h3>
+                <p class="text-purple-200 text-sm leading-relaxed mb-6">
+                    A exposição precoce e a orfandade desviam o sexo para um substituto de alívio da alma. Mas o sexo foi feito para um ambiente de aliança segura e compromisso absoluto.
+                </p>
+                <div class="bg-white/10 p-5 rounded-2xl border border-white/15 text-xs italic text-center">
+                    "Seu corpo nu merece a honra de ser compartilhado somente com quem fez uma aliança de nunca deixar de amar sua alma nua." — Ann Voskamp
+                </div>
+            </div>
+        </div>
+
+        <div class="reveal-item connector-vertical" data-step="23"></div>
+
+        <!-- Sintomas e Autoavaliação -->
+        <div class="reveal-item max-w-4xl mx-auto mb-12" data-step="23">
+            <div class="bg-white p-8 rounded-3xl shadow-xl border border-slate-200">
+                <h3 class="font-black text-xl text-slate-800 mb-6 uppercase text-center tracking-widest">Sintomas de Alerta</h3>
+                <p class="text-slate-500 text-xs text-center mb-6">Selecione os sintomas que você já identificou na sua jornada:</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <button onclick="toggleSintoma(this)" class="p-4 bg-slate-50 rounded-xl text-sm font-semibold text-slate-700 hover:bg-purple-50 transition-all border border-slate-200">
+                        <i class="fa-regular fa-circle mr-2 text-purple-500"></i> Depressão & Ansiedade
+                    </button>
+                    <button onclick="toggleSintoma(this)" class="p-4 bg-slate-50 rounded-xl text-sm font-semibold text-slate-700 hover:bg-purple-50 transition-all border border-slate-200">
+                        <i class="fa-regular fa-circle mr-2 text-purple-500"></i> Culpa & Compulsões
+                    </button>
+                    <button onclick="toggleSintoma(this)" class="p-4 bg-slate-50 rounded-xl text-sm font-semibold text-slate-700 hover:bg-purple-50 transition-all border border-slate-200">
+                        <i class="fa-regular fa-circle mr-2 text-purple-500"></i> Baixa Autoesteem / Impotência
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==========================================
+             AULA 06: CONFIAR EM UMA NOVA DIREÇÃO
+             ========================================== -->
+        <div class="reveal-item connector-long" data-step="24"></div>
+        <div class="reveal-item bg-amber-600 text-white p-4 rounded-xl shadow-lg text-center font-bold text-2xl mb-8 w-96 mx-auto card-hover" data-step="24">
+            DECISÃO 2: CONFIAR
+            <span class="block text-xs font-normal text-amber-200 mt-1 uppercase tracking-widest">Semana 06/30</span>
+        </div>
+
+        <div class="reveal-item max-w-3xl mx-auto mb-40 text-center" data-step="25">
+            <div class="bg-slate-900 text-white p-12 rounded-3xl shadow-2xl border-b-8 border-amber-500">
+                <span class="text-amber-400 text-xs font-black uppercase tracking-widest">Nova Direção</span>
+                <p class="text-2xl font-black mb-6 mt-2 italic">"Sabemos quanto Deus nos ama e confiamos em seu amor."</p>
+                <div class="text-[10px] text-slate-500 uppercase font-bold tracking-widest">1 João 4:16</div>
             </div>
         </div>
 
     </div>
 
     <!-- BARRA DE CONTROLE -->
-    <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 shadow-[0_-10px_15px_-3px_rgba(0,0,0,0.1)] p-4 flex justify-between items-center z-50">
-        <div class="text-slate-500 text-sm font-medium">
-            Passo: <span id="step-counter" class="font-bold text-red-600 bg-red-50 px-2 py-1 rounded">0</span> / 18
-        </div>
+    <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 shadow-lg p-4 flex justify-between items-center z-50">
+        <div class="text-slate-500 text-sm font-medium">Passo: <span id="step-counter" class="font-bold text-red-600 bg-red-50 px-2 py-1 rounded">0</span> / 25</div>
         <div class="flex gap-3">
-            <button onclick="prevStep()" class="px-5 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg font-bold transition-all shadow-sm">
-                ⬅️ Voltar
-            </button>
-            <button onclick="nextStep()" class="px-6 py-2.5 bg-red-600 hover:bg-red-700 text-white rounded-lg font-bold transition-all shadow-md flex items-center gap-2">
-                Avançar ➡️
-            </button>
+            <button onclick="prevStep()" class="px-5 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg font-bold transition-all shadow-sm">⬅️ Voltar</button>
+            <button onclick="nextStep()" class="px-6 py-2.5 bg-red-600 hover:bg-red-700 text-white rounded-lg font-bold transition-all shadow-md flex items-center gap-2">Avançar ➡️</button>
         </div>
     </div>
 
     <script>
         let currentStep = 0;
-        const maxSteps = 18;
+        const maxSteps = 25;
 
-        function updateCounter() {
-            document.getElementById('step-counter').innerText = currentStep;
-        }
-
-        function scrollToElement(element) {
-            setTimeout(() => {
-                element.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            }, 100);
-        }
-
+        function updateCounter() { document.getElementById('step-counter').innerText = currentStep; }
+        function scrollToElement(element) { setTimeout(() => { element.scrollIntoView({ behavior: 'smooth', block: 'center' }); }, 100); }
+        
         function nextStep() {
             if (currentStep < maxSteps) {
                 currentStep++;
@@ -269,7 +305,7 @@
                 if(elements.length > 0 && currentStep > 5) scrollToElement(elements[0]);
             }
         }
-
+        
         function prevStep() {
             if (currentStep > 0) {
                 const elements = document.querySelectorAll(`[data-step="${currentStep}"]`);
@@ -279,18 +315,24 @@
                 if(currentStep >= 1) {
                     const prevElements = document.querySelectorAll(`[data-step="${currentStep}"]`);
                     if(prevElements.length > 0) scrollToElement(prevElements[0]);
-                } else {
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                }
+                } else window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+
+        function toggleSintoma(btn) {
+            const icon = btn.querySelector('i');
+            if (icon.classList.contains('fa-regular')) {
+                icon.className = 'fa-solid fa-circle-check mr-2 text-purple-600';
+                btn.className = 'p-4 bg-purple-50 rounded-xl text-sm font-semibold text-purple-900 transition-all border border-purple-300';
+            } else {
+                icon.className = 'fa-regular fa-circle mr-2 text-purple-500';
+                btn.className = 'p-4 bg-slate-50 rounded-xl text-sm font-semibold text-slate-700 transition-all border border-slate-200';
             }
         }
 
         document.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter' || e.key === 'ArrowRight' || e.key === ' ') {
-                e.preventDefault(); nextStep();
-            } else if (e.key === 'ArrowLeft' || e.key === 'Backspace') {
-                e.preventDefault(); prevStep();
-            }
+            if (e.key === 'Enter' || e.key === 'ArrowRight' || e.key === ' ') { e.preventDefault(); nextStep(); }
+            else if (e.key === 'ArrowLeft' || e.key === 'Backspace') { e.preventDefault(); prevStep(); }
         });
     </script>
 </body>
